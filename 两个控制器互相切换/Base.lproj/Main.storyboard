@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Uyh-IR-Q4E">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zgc-ow-UR3"/>
+                    <connections>
+                        <segue destination="uXo-yq-iZB" kind="show" identifier="FirstViewController" id="u0N-gM-8WK"/>
+                        <segue destination="bIF-fB-BoK" kind="show" identifier="SecondViewController" id="QUu-OC-Gee"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686" y="-295"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="v79-lm-s1I">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="bIF-fB-BoK" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M1P-nk-Bfp"/>
+                        <viewControllerLayoutGuide type="bottom" id="tEn-Rf-bfZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rox-Rl-hkQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDg-uN-yuZ">
+                                <rect key="frame" x="64" y="262.5" width="247" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="点击注册即送222红包">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClicked:" destination="bIF-fB-BoK" eventType="touchUpInside" id="Fwc-mm-zTX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sDg-uN-yuZ" firstAttribute="centerX" secondItem="Rox-Rl-hkQ" secondAttribute="centerX" id="6uC-uO-zW3"/>
+                            <constraint firstItem="sDg-uN-yuZ" firstAttribute="centerY" secondItem="Rox-Rl-hkQ" secondAttribute="centerY" constant="-50" id="i9C-pG-ikZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XBz-87-r80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="164"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="Cxs-i8-vnA">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" id="uXo-yq-iZB" customClass="FirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y6o-j6-ccw"/>
+                        <viewControllerLayoutGuide type="bottom" id="h4J-RB-gjh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="68X-KQ-c3U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCK-yo-HMs">
+                                <rect key="frame" x="54" y="311" width="266" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="点击注册即送222红包">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClickd:" destination="uXo-yq-iZB" eventType="touchUpInside" id="gbD-Qk-x0p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mCK-yo-HMs" firstAttribute="centerY" secondItem="68X-KQ-c3U" secondAttribute="centerY" id="a5U-Pd-wTo"/>
+                            <constraint firstItem="mCK-yo-HMs" firstAttribute="centerX" secondItem="68X-KQ-c3U" secondAttribute="centerX" id="jbv-sD-FR6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TPV-Zn-fXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768" y="-647"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o4C-Bg-ZUd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Uyh-IR-Q4E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="21t-4O-A6z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gSQ-eZ-SWr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2R-vj-KVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151" y="-296"/>
+        </scene>
+    </scenes>
+</document>
